@@ -1,0 +1,198 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  ALL Button CSS START
+/*----------------------------------------*/
+//////////////////////////
+.rs_btn-group {
+    display: flex;
+    gap: 30px;
+}
+
+//////////////////////////
+// base btn 
+@mixin rs_btn {
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: 0.3s all;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--body-font);
+    padding: 12px 30px;
+}
+
+//////////////////////////
+.rs-btn-primary {
+    @include rs_btn;
+    background-color: var(--white-color);
+    border-radius: 6px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 10px;
+        background: #000;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -40px;
+        clip-path: polygon(0% 32%, 70% 32%, 70% 0%, 100% 50%, 70% 100%, 70% 68%, 0% 68%);
+        transition: 0.3s all;
+
+    }
+
+    &:hover {
+        padding-right: 55px;
+
+        &::after {
+            right: 10px;
+        }
+    }
+}
+
+//////////////////////////
+.cart-btn {
+    background: var(--white-color);
+    width: 100%;
+    padding: 11.5px 0;
+    max-width: 445px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    border-radius: 6px;
+    border: 1px solid rgb(246, 203, 183);
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgb(246, 203, 183);
+        left: 0;
+        top: 0;
+        border-radius: inherit;
+        transform: scaleX(1);
+        transform-origin: center;
+        transition: 0.3s;
+        z-index: -1;
+    }
+
+    &:hover {
+        &::after {
+            transform: scaleX(0);
+        }
+
+        color: rgb(246, 203, 183);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////
+// hover effect btn 
+@mixin after-effect {
+    position: absolute;
+    content: '';
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0.8) scaleY(0);
+    transform-origin: bottom center;
+    border-radius: inherit;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+
+
+
+//////////////////////////
+// outline btn
+.rs_btn-outline {
+    @include rs_btn;
+    font-family: var(--rs-ff-title-font);
+    color: var(--rs-title-color);
+    border: 1px solid var(--rs-border-color);
+    padding: 16px 35px;
+
+    &::after {
+        @include after-effect;
+        background: var(--rs-title-color);
+    }
+
+    &:hover {
+        color: var(--rs-white);
+
+        &::after {
+            transform: scaleX(1) scaleY(1);
+        }
+    }
+}
+
+
+
+
+//////////////////////////
+// slider navigation 
+
+.rs_slider-nav {
+    button {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--rs-smoke-alpha);
+        color: var(--rs-theme-1);
+        transition: 0.3s;
+
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+
+        &:hover {
+            background: var(--rs-theme-1);
+            color: var(--rs-white);
+
+
+        }
+    }
+
+}
+
+.rs_slider-nav-2 {
+    button {
+        color: var(--rs-white);
+
+        &:hover {
+            background: var(--rs-theme-2);
+            color: var(--rs-black);
+        }
+    }
+
+}

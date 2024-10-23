@@ -1,0 +1,146 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  product cart CSS START
+/*----------------------------------------*/
+
+.product-cart-img {
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.product-cart-img img {
+    max-width: 100%;
+    border-radius: inherit;
+
+}
+
+.rating {
+    margin-bottom: 12px;
+}
+
+.rating i {
+    color: rgb(246, 203, 183);
+}
+
+
+.rating-result {
+    font-size: 14px;
+    color: #000;
+}
+
+.product-sale {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 13px;
+}
+
+.product-sale-price {
+    font-size: 20px;
+    color: rgb(246, 203, 183);
+    font-weight: 700;
+
+}
+
+.offer-badge {
+    background: #514644;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5.5px 11px;
+    font-size: 12px;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 0.3px;
+}
+
+.offer-badge i {
+    transform: rotate(90deg);
+    margin-right: 5px;
+}
+
+.product-des {
+    max-width: 344px;
+    margin-bottom: 10px;
+}
+
+.product-des ul {
+    list-style: none;
+}
+
+.product-des li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 6px;
+}
+
+.product-des li:after {
+    content: "\e86c";
+    font-family: 'Material Icons';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(246, 203, 183);
+}
+
+
+.quantity-group {
+    width: 142px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--title-color);
+    border-radius: 6px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.quantity-group input {
+    background: none;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    padding: 0 10px;
+    text-align: center;
+
+    &::placeholder {
+        font-size: 14px;
+    }
+}
+
+.quantity-group button {
+    padding: 0 18px;
+    font-size: 18px;
+}
+
+.quantity-group input:focus {
+    border: 1px solid var(--title-color);
+}
+
+.add-to-cart label {
+    font-size: 13px;
+    padding-bottom: 3px;
+    color: var(--title-color);
+}
+
+.details-link {
+    font-size: 14px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.details-link i {
+    margin-left: 10px;
+    transition: 0.3s;
+
+}
+
+.details-link:hover {
+    border-bottom: 1px solid #000;
+}
+
+
+.details-link:hover i {
+    margin-left: 15px;
+}

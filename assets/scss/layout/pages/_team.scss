@@ -1,0 +1,104 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. Team  CSS START
+/*----------------------------------------*/
+.rs_team {
+    &-card {
+        padding: 10px;
+        padding-bottom: 30px;
+        background: var(--rs-smoke-2);
+        border-radius: 30px;
+        transition: 0.3s;
+
+        &:hover {
+            background: var(--rs-theme-1);
+        }
+    }
+
+    &-img {
+        border-radius: inherit;
+        overflow: hidden;
+
+        img {
+            border-radius: inherit;
+            transition: 0.3s;
+        }
+    }
+
+    &-name {
+        color: var(--rs-title-color);
+        font-family: var(--rs-ff-Signika);
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &-info {
+        color: var(--rs-theme-1);
+        font-family: var(--rs-ff-roboto);
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    &-card:hover &-name,
+    &-card:hover &-info {
+        color: var(--rs-white);
+    }
+
+    &-card:hover &-img img {
+        transform: scale(1.1);
+    }
+
+}
+
+.rs_team {
+    &-shape {
+        &-1 {
+            position: absolute;
+            left: 0;
+            bottom: 50px;
+
+            @media #{$xxl, $xl, $lg} {
+                display: none;
+            }
+
+        }
+
+        &-2 {
+            position: absolute;
+            right: 0;
+            bottom: 50px;
+
+            @media #{$xxl, $xl, $lg} {
+                display: none;
+            }
+        }
+    }
+}
+
+.rs_social-icons {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: inline-block;
+            margin: 0 6.5px;
+
+            a {
+                display: block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: var(--rs-theme-1);
+                border-radius: 50%;
+                font-size: 14px;
+                transition: 0.3s;
+                background: var(--rs-white);
+            }
+        }
+    }
+}

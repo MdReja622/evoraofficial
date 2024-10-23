@@ -1,0 +1,95 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. cta CSS START
+/*----------------------------------------*/
+.rs_cta {
+    &-title {
+        color: var(--rs-theme-1);
+        font-family: var(rs-ff-Signika);
+        font-size: 64px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+
+        @media #{$xl} {
+            font-size: 60px;
+        }
+
+        @media #{$lg} {
+            font-size: 50px;
+        }
+
+        &-2 {
+            font-family: Roboto;
+            font-size: 64px;
+            font-weight: 700;
+            -webkit-text-stroke: 3px var(--rs-theme-1);
+            color: transparent;
+        }
+    }
+
+    &-content {
+        p {
+            margin-bottom: 25px;
+        }
+    }
+
+    &-price {
+        color: var(--rs-theme-1);
+        font-family: Roboto;
+        font-size: 50px;
+        font-weight: 600;
+
+        & span {
+            color: var(--rs-body-color);
+            font-size: 32px;
+            font-weight: 400;
+        }
+    }
+
+    &-add-btn {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        & .rs_cta-input {
+            width: 113px;
+            color: var(--rs-theme-1);
+            background: var(--rs-smoke-2);
+            font-size: 30px;
+            font-family: var(--rs-ff-Signika);
+
+
+            &::placeholder {
+                color: var(--rs-theme-1);
+                text-align: center;
+                font-size: 30px;
+                font-family: var(--rs-ff-Signika);
+
+            }
+        }
+    }
+
+    &-plus,
+    &-minus {
+        width: 56px;
+        height: 56px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--rs-smoke-2);
+        border-radius: 50%;
+        font-size: 16px;
+    }
+
+    &-shape-1 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.rs_cta-img img {
+    width: 100%;
+}

@@ -1,0 +1,56 @@
+@use 'typography' as *;
+
+:root {
+    --theme-color: #FA8507;
+    --theme-color-2: rgb(246, 203, 183);
+    --theme-color-3: rgb(255, 243, 237);
+    --title-color: #121212;
+    --body-color: #121212e6;
+    --smoke-color: #F8F8F8;
+    --smoke-color2: #F4EFE3;
+    --black-color: #000000;
+    --black-color-2: #514644;
+    --gray-color: #bdbdbd;
+    --white-color: #ffffff;
+    --body-bg: #ffffff;
+    --light-color: #8E97A6;
+    --yellow-color: #FFB539;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+    --border-color: #D8DDE1;
+    --shadow-color: rgba(18, 18, 18, 0.1);
+
+
+
+    --section-space: 120px;
+    --section-space-mobile: 80px;
+    --section-title-space: 60px;
+    --ripple-ani-duration: 5s;
+
+
+    // copy color for use 
+    --color-base-text: 18, 18, 18;
+    --color-shadow: 18, 18, 18;
+    --color-base-background-1: 255, 255, 255;
+    --color-base-background-2: 255, 243, 237;
+    --color-base-solid-button-labels: 255, 255, 255;
+    --color-base-outline-button-labels: 81, 70, 68;
+    --color-base-accent-1: 246, 203, 183;
+    --color-base-accent-2: 81, 70, 68;
+    --payment-terms-background-color: #ffffff;
+    --gradient-base-background-1: #ffffff;
+    --gradient-base-background-2: #fff3ed;
+    --gradient-base-accent-1: #f6cbb7;
+    --gradient-base-accent-2: #514644;
+
+
+
+
+
+
+
+    // font declarion 
+    --body-font: "Poppins", serif;
+    --title-font: "Poppins", serif;
+
+}

@@ -1,0 +1,172 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  03. HEADER CSS START
+/*----------------------------------------*/
+// announcement area 
+.announcement {
+    &-area {
+        background: var(--black-color-2);
+        width: 100%;
+        padding: 13px 0;
+        cursor: default;
+
+        & .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        & .swiper-wrapper {
+            line-height: 1;
+        }
+    }
+
+    &-message {
+        padding: 0;
+        margin: 0;
+        letter-spacing: 1px;
+        line-height: 1;
+        font-size: 16px;
+        text-align: center;
+        color: var(--white-color);
+    }
+}
+
+
+.header {
+    &-area {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        padding: 15px 20px;
+        gap: 20px;
+    }
+
+    &-logo {
+        max-width: 150px;
+
+        & img {
+            max-width: 100%;
+        }
+
+    }
+
+
+    &-icons {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 3px;
+    }
+
+    &-cart,
+    &-search {
+        display: inline-flex;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &-search {
+        i {
+            font-size: 20px;
+            margin-top: 3px;
+            transition: 0.3s;
+            transform: scale(.9);
+        }
+
+        &:hover i {
+            transform: scale(1);
+
+        }
+    }
+
+    &-cart {
+        img {
+            max-width: 22px;
+        }
+    }
+}
+
+.main-menu {
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+
+            a {
+                font-size: 14px;
+                display: block;
+                padding: 12px;
+                color: var(--body-color);
+                font-weight: 500;
+            }
+
+            a.active {
+                background-color: var(--theme-color-2);
+                padding: 0 12px;
+                border-radius: 3px;
+                margin-left: 12px;
+                margin-right: 10px;
+                color: var(--white-color);
+
+                &:hover {
+                    color: var(--white-color);
+                }
+
+            }
+
+            &>a:hover {
+                color: var(--theme-color-2);
+            }
+
+            &.has-sub-menu {
+                position: relative;
+                padding-right: 20px;
+
+                &::after {
+                    content: '\f078';
+                    font-family: fontawesome;
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 12px;
+                    color: var(--body-color);
+                    transition: 0.3s;
+                }
+
+                &:hover::after {
+                    color: var(--theme-color-2);
+
+                }
+            }
+        }
+    }
+}
+
+ul.sub-menu {
+    position: absolute;
+    width: 200px;
+    background: var(--white-color);
+    box-shadow: 10px 12px 20px var(--shadow-color);
+    border-radius: 22px;
+    padding: 30px 0;
+    z-index: 99;
+
+}
+
+ul.sub-menu li {
+    display: block;
+    padding: 8px 24px;
+    margin: 0;
+}
+
+ul.sub-menu li a {
+    padding: 0;
+    margin: 0;
+}

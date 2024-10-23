@@ -1,0 +1,63 @@
+	@use "sass:selector";
+
+	//transition
+	@mixin transition($time) {
+		-webkit-transition: all $time ease-out 0s;
+		-moz-transition: all $time ease-out 0s;
+		-ms-transition: all $time ease-out 0s;
+		-o-transition: all $time ease-out 0s;
+		transition: all $time ease-out 0s;
+	}
+
+
+
+
+	// placeholder input
+	@mixin rs-placeholder {
+		&::-webkit-input-placeholder {
+			@content;
+		}
+
+		&:-moz-placeholder {
+			@content;
+		}
+
+		&::-moz-placeholder {
+			@content;
+		}
+
+		&:-ms-input-placeholder {
+			@content;
+		}
+	}
+
+
+
+
+	// appearance for select
+	@mixin appearance($value) {
+		-webkit-appearance: $value;
+		-moz-appearance: $value;
+		-ms-appearance: $value;
+		-o-appearance: $value;
+		appearance: $value;
+	}
+
+
+	// transform
+	@mixin transform($transforms) {
+		-webkit-transform: $transforms;
+		-moz-transform: $transforms;
+		-ms-transform: $transforms;
+		-o-transform: $transforms;
+		transform: $transforms;
+	}
+
+	// Flexbox display
+	@mixin flexbox() {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+	}

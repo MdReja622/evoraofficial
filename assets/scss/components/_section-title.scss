@@ -1,0 +1,14 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  SECTION TITLE CSS START
+/*----------------------------------------*/
+
+
+.section-title {
+    font-size: 37.5px;
+    color: var(--title-color);
+    font-weight: 700;
+    line-height: 1.2;
+
+}

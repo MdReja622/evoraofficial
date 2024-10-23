@@ -1,0 +1,51 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. about CSS START
+/*----------------------------------------*/
+
+
+.rs_banner-sub-title {
+    color: var(--Secondary-color, #F8CA38);
+    font-family: Signika;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.rs_banner-title {
+    color: var(--White, #FFF);
+    font-family: Signika;
+    font-size: 84px;
+    font-weight: 700;
+
+    @media #{$xl} {
+        font-size: 70px;
+    }
+
+    @media #{$lg} {
+        font-size: 50px;
+    }
+}
+
+.banner-content p {
+    color: var(--Body-Color-P-2, #BCBCBC);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 35px;
+
+}
+
+
+.rs_banner-img {
+    margin-right: -120px;
+
+    @media #{$xl, $lg, $md, $xs} {
+        margin-right: 0;
+
+    }
+}
+
+.rs_banner-img img {
+    width: 100%;
+}

@@ -1,0 +1,17 @@
+// font url
+$font-url: 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap';
+
+
+
+@font-face {
+    font-family: 'Apercu';
+    /* Using 'Apercu' as the font-family name */
+    src: url('/assets/fonts/apercu/ApercuPro.eot');
+    src: local('Apercu'), local('Apercu Pro'),
+        url('/assets/fonts/apercu/ApercuPro.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/apercu/ApercuPro.woff2') format('woff2'),
+        url('/assets/fonts/apercu/ApercuPro.woff') format('woff'),
+        url('/assets/fonts/apercu/ApercuPro.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

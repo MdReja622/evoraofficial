@@ -1,0 +1,107 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. about CSS START
+/*----------------------------------------*/
+.rs_about {
+    &-title {
+        font-size: 36px;
+    }
+
+    &-list {
+        ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+
+            li {
+                position: relative;
+                padding-left: 20px;
+                margin-bottom: 10px;
+
+                &:before {
+                    content: "\f336";
+                    font-family: fontawesome;
+                    color: var(--rs-theme-2);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+
+            &:after {
+                content: "";
+                width: 2px;
+                height: 60%;
+                background: var(--rs-border-color);
+                top: 15%;
+                position: absolute;
+                left: 245px;
+            }
+        }
+    }
+}
+
+
+.rs_about-img {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    margin-left: -57px;
+}
+
+.rs_about-img-1 {
+    border-radius: 137px;
+
+    img {
+        border-radius: inherit;
+    }
+}
+
+.rs_about-img-2 {
+    border-radius: 137px;
+    position: relative;
+
+    img {
+        border-radius: inherit;
+    }
+
+    &-shape {
+        position: absolute;
+        right: -60px;
+        top: 0;
+    }
+}
+
+.rs_about-shape-1 {
+    position: absolute;
+    top: 120px;
+    left: 10px;
+
+    @media #{$xxxl} {
+        top: 30px;
+        left: 0;
+    }
+
+    @media #{$xl} {
+        top: 0;
+        left: 0;
+    }
+}
+
+.rs_about-shape-2 {
+    position: absolute;
+    right: -115px;
+    bottom: -140px;
+
+    @media #{$xxl, $xl} {
+        width: 300px;
+    }
+}
+
+.rs_about-wrapper {
+    @media #{$xl} {
+        padding-left: 50px;
+    }
+}

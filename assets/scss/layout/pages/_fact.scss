@@ -1,0 +1,79 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. Fact  CSS START
+/*----------------------------------------*/
+.rs_fact {
+    &-overlay {
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(1, 15, 28, 0.60);
+            z-index: 1;
+        }
+    }
+
+    &-items {
+        position: relative;
+        z-index: 2;
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        margin-bottom: 30px;
+    }
+
+    &-icon {
+        width: 80px;
+        height: 80px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border-radius: 40px;
+        border: 1px solid var(--rs-white-05);
+        background: var(--rs-white-01);
+        backdrop-filter: blur(10px);
+    }
+
+    &-counter {
+        color: var(--rs-theme-2);
+        font-family: var(--rs-ff-Signika);
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 1;
+        margin: 0;
+
+        @media #{$lg} {
+            font-size: 55px;
+
+        }
+    }
+
+    &-info {
+        color: var(--rs-white);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+}
+
+.rs_fact-item {
+    &-3 {
+        justify-content: end;
+    }
+
+    &-4 {
+        justify-content: end;
+    }
+}

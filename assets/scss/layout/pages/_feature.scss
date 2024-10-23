@@ -1,0 +1,139 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. featured CSS START
+/*----------------------------------------*/
+
+.rs_featured {
+    &-item {
+        padding: 20px;
+        border-radius: 10px;
+        background: var(--rs-white);
+        border: 1px solid var(--rs-border-color);
+        transition: 0.3s;
+    }
+
+    &-content {
+        padding: 10px;
+        padding-top: 0;
+    }
+
+    &-border {
+        background: var(--rs-border-color);
+        width: 100%;
+        height: 1px;
+        margin-top: 10px;
+    }
+
+    &-rating {
+        margin-bottom: 15px;
+
+        i {
+            color: var(--rs-theme-2);
+            font-size: 16px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+    }
+
+    &-title {
+        color: var(--rs-title-color);
+        font-family: Signika;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        transition: .3s;
+
+        &:hover {
+            color: var(--rs-theme-1);
+
+        }
+    }
+
+    &-price {
+        color: var(-rs-body-color);
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 0;
+
+        span {
+            color: var(--rs-red);
+            margin-left: 10px;
+        }
+    }
+
+    &-img {
+        padding-top: 10px;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+    &-social {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: 1s;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+        background-color: rgba($color: #064635, $alpha: .6);
+
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: var(--rs-white);
+            color: var(--rs-theme-1);
+            border-radius: 4px;
+            margin: 0 5px;
+            font-size: 20px;
+
+            &:hover {
+                color: var(--rs-white);
+                background: var(--rs-theme-1);
+            }
+        }
+    }
+}
+
+.rs_featured-item {
+    &:hover .rs_featured-social {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:hover {
+        border: 1px solid var(--rs-theme-2);
+    }
+
+}
+
+
+.rs_tag {
+    color: var(--rs-title-color);
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--rs-smoke);
+    padding: 4px 17px;
+    line-height: 1;
+    border-radius: 4px;
+    z-index: 5;
+    transition: 0.3s;
+
+}

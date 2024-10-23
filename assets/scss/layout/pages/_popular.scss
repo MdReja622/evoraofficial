@@ -1,0 +1,208 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  30. featured CSS START
+/*----------------------------------------*/
+
+.rs_popular {
+    &-card {
+        background: var(--rs-smoke-2);
+        position: relative;
+        padding: 30px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    &-shape {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+
+    }
+
+    &-title {
+        color: var(--rs-theme-1);
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    &-content {
+        p {
+            margin-bottom: 29px;
+            width: 240px;
+            color: var(--rs-body-color);
+        }
+    }
+
+    &_img {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    &-btn {
+        .rs_btn-blue {
+            padding: 4px 19px;
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+
+
+.rs_offer {
+    width: 64px;
+    height: 64px;
+    background: var(--rs-theme-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    bottom: 36%;
+    right: 20px;
+    border: 2px dashed var(--rs-white);
+    outline: 4px solid var(--rs-theme-1);
+
+    span {
+        color: var(--rs-white);
+        font-family: var(rs-ff-Signika);
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 0.08px;
+        line-height: 1;
+        display: inline-block;
+    }
+
+    &-circle {
+        position: relative;
+        padding-left: 7px;
+        margin-top: -2px;
+    }
+
+    &-number {
+        line-height: 1;
+        font-size: 28px !important;
+        margin-top: -10px;
+    }
+
+    &-text {
+        &-percent {
+            margin-left: 4px;
+            font-size: 12px;
+        }
+
+        &-off {
+            position: absolute;
+            right: 3px;
+            transform: rotate(90deg);
+            top: 28px;
+        }
+    }
+
+}
+
+.rs_popular {
+    &-item {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        padding-right: 10px;
+        border: 1px solid var(--rs-border-color);
+        border-radius: 5px;
+        transition: 0.3s;
+
+        &:hover {
+            border-color: var(--rs-theme-2);
+        }
+
+        &-img {
+            margin-right: 10px;
+        }
+
+        &-content {
+            padding-left: 20px;
+            border-left: 1px solid var(--rs-border-color);
+        }
+
+        &-title {
+            color: var(--rs-title-color);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+    }
+
+    &-price {
+        color: var(--rs-body-color);
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 4px;
+
+        span {
+            color: var(--rs-red);
+            margin-left: 10px;
+        }
+    }
+
+    &-rating i {
+        color: var(--rs-theme-2);
+    }
+
+    &-cart {
+        margin-left: auto;
+        width: 38px;
+        height: 38px;
+        background: var(--rs-theme-1);
+        text-align: center;
+        line-height: 38px;
+        color: var(--rs-white);
+        transition: 0.3s;
+        border-radius: 50%;
+        font-size: 16px;
+
+        &:hover {
+            background: var(--rs-theme-2);
+        }
+    }
+}
+
+
+
+
+
+.rs_popular-shape-1 {
+    position: absolute;
+    top: 180px;
+    left: 0;
+
+    @media #{$xxxl, $xxl} {
+        top: 80px;
+    }
+
+    @media #{$xl, $lg} {
+        top: 0;
+
+    }
+}
+
+.rs_popular-shape-2 {
+    position: absolute;
+    right: 30px;
+    bottom: 80px;
+
+    @media #{$xxxl, $xxl} {
+        right: 0;
+        bottom: 0;
+    }
+
+    @media #{$xl, $lg} {
+        right: 0;
+        bottom: 0;
+    }
+}
