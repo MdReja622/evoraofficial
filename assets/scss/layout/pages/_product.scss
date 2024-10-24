@@ -555,8 +555,7 @@
     margin: 0;
 }
 
-.scroll-container {
-    height: 75%;
-    overflow-y: scroll;
-    scrollbar-width: none;
+.sticky {
+    position: sticky;
+    top: 0;
 }
