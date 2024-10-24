@@ -862,32 +862,6 @@ ul.sub-menu li a {
 }
 
 /*----------------------------------------*/
-/*  30. service CSS START
-/*----------------------------------------*/
-.service {
-  background: var(--theme-color-3);
-  padding: 25px;
-  border-radius: 24px;
-}
-
-.service-icon {
-  max-width: 70px;
-  margin-bottom: 15px;
-}
-
-.service-title {
-  font-size: 22.5px;
-  color: var(--title-color);
-  margin-bottom: 15px;
-  letter-spacing: 0.6px;
-}
-
-.service-text {
-  font-size: 16px;
-  margin-bottom: 0;
-}
-
-/*----------------------------------------*/
 /*  Product CSS START
 /*----------------------------------------*/
 .product-area {
@@ -1237,6 +1211,159 @@ ul.sub-menu li a {
   font-weight: 700;
   line-height: 1.33;
   padding: 8px 0;
+}
+
+.locationinfop {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px;
+  background-color: #FDF7F5;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.locationinfop span:last-child {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000;
+}
+
+.payment-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.service {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service span {
+  font-size: 14px;
+  font-family: "Apercu";
+  color: #75371a;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+}
+
+.service span:first-child {
+  font-size: 12px;
+}
+
+.service span:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 60%;
+  background: rgba(0, 0, 0, 0.1215686275);
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: -12px;
+}
+
+.accordion_title {
+  font-size: 16px;
+  font-family: "Apercu";
+  color: var(--title-color);
+  padding: 20px 16px;
+  margin: 0;
+  position: relative;
+  padding-right: 40px;
+}
+
+.accordion_title button {
+  width: 100%;
+  text-align: left;
+}
+.accordion_title button::after {
+  content: "\f078";
+  font-family: fontawesome;
+  position: absolute;
+  right: 16px;
+  transition: 0.3s;
+}
+
+.accordion_title button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+.rs_accordion-item {
+  margin-bottom: 8px;
+  background: #fff;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+
+.rs_accordion-body {
+  padding: 16px;
+  padding-top: 0;
+}
+
+.rs_accordion-body p {
+  font-size: 14px;
+  font-family: "Apercu";
+  line-height: 1.4;
+}
+
+.accordion-feature {
+  display: flex;
+  gap: 16px;
+  background: #fdf7f5;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.accordion-feature:last-child {
+  margin-bottom: 0;
+}
+
+.count-number {
+  width: 32px;
+  height: 32px;
+  background: #F6CBB7;
+  display: inline-block;
+  flex: 0 0 auto;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 50%;
+}
+
+.count-number.img {
+  text-align: center;
+  background: #fff;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 100px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0588235294);
+  height: 56px;
+  padding: 0;
+  width: 56px;
+  line-height: 56px;
+}
+
+.acc-title {
+  color: #161616;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.accordion-feature p {
+  margin: 0;
+}
+
+.scroll-container {
+  height: 75%;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 /*----------------------------------------*/
