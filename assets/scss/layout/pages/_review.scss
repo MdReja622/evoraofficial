@@ -1,0 +1,158 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  review CSS START
+/*----------------------------------------*/
+
+.review-area {
+    background: #fdf7f5;
+
+    .rating {
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, .12);
+        border-radius: 12px;
+        box-shadow: 0 1px 2px #0000000f;
+        padding: 6px 16px;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .section-title {
+        font-size: 40px;
+        color: var(--title-color);
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0;
+
+        &.mb-20 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .info {
+        font-size: 18px;
+        color: #161616;
+        font-family: "Apercu";
+    }
+
+    .review-card-wrappper {
+        display: flex;
+        gap: 32px;
+    }
+
+    .review-tag {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .review-tag span {
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 12px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0509803922);
+        padding: 9px 16px;
+        transform: rotate(-2deg);
+        font-size: 16px;
+        font-family: "Apercu";
+        display: inline-block;
+    }
+
+    .review-tag span:nth-child(even) {
+        transform: rotate(2deg);
+    }
+
+    .review-card {
+        max-width: 404px;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 24px;
+        box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.0588235294);
+        padding: 32px;
+    }
+
+    .review-card-icon {
+        margin-bottom: 30px;
+    }
+
+    .review-title {
+        font-size: 18px;
+        font-family: "Apercu";
+
+    }
+
+    .review-text {
+        font-size: 18px;
+        font-family: "Apercu";
+        margin-bottom: 30px;
+        color: #161616;
+    }
+
+    .author {
+        color: #161616;
+    }
+
+    .author-info {
+        font-size: 16px;
+        margin: 0;
+        font-family: "Apercu";
+    }
+}
+
+.px-15 {
+    padding: 0 15px;
+}
+
+.video-banner-area {
+    .video-banner {
+        border-radius: 32px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .play-button {
+        position: absolute;
+        inset: 50%;
+        width: 48px;
+        height: 48px;
+        background: #000;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+
+        i {
+            font-size: 26px;
+        }
+    }
+
+    .video-banner:hover .play-button {
+        background: #ffffff;
+        color: #000000;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* Hide play button in video controls */
+video::-webkit-media-controls-play-button {
+    display: none;
+}
+
+video::-webkit-media-controls-start-playback-button {
+    display: none;
+}

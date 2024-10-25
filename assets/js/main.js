@@ -71,13 +71,45 @@
             $(this).addClass('active');
         });
 
+        ///////////////////////////////
+        // Initialize video Swiper
+        var video_swiper = new Swiper('.video-slider', {
+            spaceBetween: 30,
+            slidesPerView: 4,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+        });
+        ///////////////////////////////
+        // Play video when play button is clicked
+        const playButtons = document.querySelectorAll('.play-btn');
+
+        playButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const videoId = this.getAttribute('data-video');
+                const video = document.getElementById(videoId);
+
+                video.play(); // Play the video
+                this.style.display = 'none'; // Hide the play button after clicking
+            });
+        });
 
 
+        ///////////////////////////////
+        // play video is clicked for feature
+        // Get the video element
+        const video = document.getElementById('feature_video');
 
-
-
-
-
+        // Play the video when clicked
+        video.addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
 
 
 
@@ -125,6 +157,45 @@
 
         // Initial button state update
         updateButtonState();
+
+
+
+
+
+
+        ///////////////////////////////
+        // Initialize customer Swiper
+        var customer_swiper = new Swiper('.customer-slider', {
+            slidesPerView: 'auto', // Sets each slide width based on content
+            spaceBetween: 15,      // Space between slides
+            loop: true,            // Enables continuous looping
+            allowTouchMove: false, // Disable manual swiping
+            autoplay: {
+                delay: 0,          // Set to zero for continuous scrolling
+                disableOnInteraction: false, // Continue autoplay after user interactions
+            },
+            speed: 5000,          // Speed of the transition
+        });
+        ///////////////////////////////////
+        // video banner 
+        const $video = $('.video-banner #video');
+        const $playButton = $('.play-button');
+
+        // Play video and hide play button on click
+        $('#videoBanner').on('click', function () {
+            if ($video[0].paused) {
+                $video[0].play();
+                $playButton.hide(); // Hide play button once video starts
+            }
+        });
+
+        // Show play button when video ends
+        $video.on('ended', function () {
+            $playButton.show();
+        });
+
+
+
 
 
 

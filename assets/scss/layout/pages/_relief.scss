@@ -1,0 +1,109 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  relief CSS START
+/*----------------------------------------*/
+.relief-area {
+    background: #fdf7f5;
+    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+}
+
+
+.relief-img {
+    border-radius: 30px;
+    overflow: hidden;
+    margin-right: 25px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.relief-content {
+    padding-left: 25px;
+
+    .sub-title {
+        color: #8e431f;
+        font-family: "Apercu";
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .title {
+        color: #161616;
+        font-family: Poppins;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.2;
+        max-width: 616px;
+        text-align: left;
+        margin-bottom: 14px;
+    }
+
+    .info {
+        font-family: "Apercu";
+        font-size: 20px;
+        color: #5f6368;
+        font-weight: 400;
+    }
+
+    .info-2 {
+        font-family: "Apercu";
+        font-size: 20px;
+        color: #161616;
+        font-weight: 500;
+    }
+
+}
+
+.relief-area.style-2 {
+    background: none;
+
+    .relief-content {
+        padding-left: 0;
+        padding-right: 25px;
+    }
+
+    .sub-title {
+        background: #f6cbb7;
+        border: 1px solid rgba(0, 0, 0, .12);
+        border-radius: 8px 8px 8px 8px;
+        padding: 6px 15px;
+        font-size: 14px;
+        font-family: "Apercu";
+        color: #000;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        gap: 8px;
+
+
+        img {
+            width: 58px;
+            background: #fff;
+            border: 1px solid #000;
+            border-radius: 8px 8px 8px 8px;
+            padding: 2px 8px;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        i {
+            color: #000;
+        }
+
+        .relief-img {
+            margin-left: 25px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}

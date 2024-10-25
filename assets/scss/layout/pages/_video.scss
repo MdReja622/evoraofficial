@@ -1,0 +1,83 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  Video CSS START
+/*----------------------------------------*/
+.video-area {
+    padding: 0 15px;
+    padding-top: 50px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+.swiper-video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.play-btn {
+    width: 56px;
+    height: 56px;
+    background: #f6cbb7;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn i {
+    font-size: 25px;
+    color: #fff;
+}
+
+
+.ripple-animation::before,
+.ripple-animation::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f6cbb7;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 999;
+    animation: infinite 1.5s infinite;
+}
+
+.ripple-animation:after {
+    animation-delay: 1s;
+}
+
+@keyframes infinite {
+    0% {
+        opacity: 0;
+        transform: none;
+    }
+
+    20%,
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
