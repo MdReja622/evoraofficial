@@ -1,0 +1,153 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  review CSS START
+/*----------------------------------------*/
+
+.review-tab {
+
+    .sub-title {
+        color: #fc905d;
+    }
+
+    .section-title {
+        margin-bottom: 55px;
+    }
+
+    .total-score {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .rating i {
+        color: #EED1C3;
+        letter-spacing: -3px;
+    }
+
+    .total-review span {
+        display: inline-block;
+        font-size: 15px;
+        font-family: Apercu;
+    }
+
+    .tab-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 600px;
+        gap: 6px;
+        line-height: 1.2;
+        font-family: "Apercu";
+        margin: 0 auto;
+
+    }
+
+    .tab-link span {
+        display: inline-flex;
+        align-items: center;
+        color: #121212e6;
+
+        i {
+            font-size: 14px;
+        }
+    }
+
+    .count-review {
+        font-size: 11.2px;
+    }
+
+    .tab-link .progress {
+        flex-grow: 1;
+        height: 10px;
+        margin: 0 8px;
+    }
+
+    .tab-link .progress-bar {
+        background-color: rgb(246, 203, 183);
+        /* Color for the filled part */
+    }
+
+    .count-review {
+        min-width: 50px;
+        text-align: right;
+        color: #121212e6;
+        font-weight: bold;
+    }
+
+    .review-tabs:hover .tab-link {
+        opacity: 0.6;
+    }
+
+    .tab-link:hover {
+        opacity: 1 !important;
+    }
+
+    .tab-link[disabled] {
+        opacity: 0.6;
+    }
+
+
+
+
+    .write-review {
+        justify-content: center;
+        padding: 0;
+        line-height: 1;
+
+    }
+
+
+    .customer-reviw-card {
+        float: left;
+        width: 285px;
+        overflow: hidden;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 5px #eaeaea;
+        border-radius: 4px;
+        transition: 0.3s;
+        margin-bottom: 15px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .customer-reviw-author {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .customer-reviw-content {
+        padding: 10px 15px;
+
+        p {
+            font-size: 14px;
+            font-family: "Apercu";
+            margin: 0;
+        }
+
+        .rating i {
+            color: rgb(246, 203, 183);
+        }
+    }
+
+    .customer-reviw-card:hover {
+        transform: scale(1.03);
+    }
+
+    .customer-reviw-card-wrapper {
+        margin: auto;
+        max-width: 600px;
+    }
+
+    .see-more {
+        font-size: 16px;
+        font-family: "Apercu";
+        color: #121212e6;
+        width: 100%;
+
+    }
+
+}

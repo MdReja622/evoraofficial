@@ -1246,7 +1246,6 @@ ul.sub-menu li a {
   font-size: 16px;
   font-family: "Apercu";
   color: var(--title-color);
-  padding: 20px 16px;
   margin: 0;
   position: relative;
   padding-right: 40px;
@@ -1255,6 +1254,7 @@ ul.sub-menu li a {
 .accordion_title button {
   width: 100%;
   text-align: left;
+  padding: 20px 16px;
 }
 .accordion_title button::after {
   content: "\f078";
@@ -1457,6 +1457,10 @@ ul.sub-menu li a {
     transform: scale(1.5);
   }
 }
+#video {
+  width: 100%;
+}
+
 /*----------------------------------------*/
 /*  30. hero CSS START
 /*----------------------------------------*/
@@ -1673,6 +1677,9 @@ ul.sub-menu li a {
 .relief-area.style-2 .sub-title .relief-img {
   margin-left: 25px;
 }
+.relief-area.style-2 .relief-img {
+  margin-left: 25px;
+}
 
 /*----------------------------------------*/
 /*  review CSS START
@@ -1797,6 +1804,148 @@ video::-webkit-media-controls-play-button {
 
 video::-webkit-media-controls-start-playback-button {
   display: none;
+}
+
+/*----------------------------------------*/
+/*  review CSS START
+/*----------------------------------------*/
+.review-tab .sub-title {
+  color: #fc905d;
+}
+.review-tab .section-title {
+  margin-bottom: 55px;
+}
+.review-tab .total-score {
+  font-size: 32px;
+  margin: 0;
+}
+.review-tab .rating i {
+  color: #EED1C3;
+  letter-spacing: -3px;
+}
+.review-tab .total-review span {
+  display: inline-block;
+  font-size: 15px;
+  font-family: Apercu;
+}
+.review-tab .tab-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+  gap: 6px;
+  line-height: 1.2;
+  font-family: "Apercu";
+  margin: 0 auto;
+}
+.review-tab .tab-link span {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(18, 18, 18, 0.9019607843);
+}
+.review-tab .tab-link span i {
+  font-size: 14px;
+}
+.review-tab .count-review {
+  font-size: 11.2px;
+}
+.review-tab .tab-link .progress {
+  flex-grow: 1;
+  height: 10px;
+  margin: 0 8px;
+}
+.review-tab .tab-link .progress-bar {
+  background-color: rgb(246, 203, 183);
+  /* Color for the filled part */
+}
+.review-tab .count-review {
+  min-width: 50px;
+  text-align: right;
+  color: rgba(18, 18, 18, 0.9019607843);
+  font-weight: bold;
+}
+.review-tab .review-tabs:hover .tab-link {
+  opacity: 0.6;
+}
+.review-tab .tab-link:hover {
+  opacity: 1 !important;
+}
+.review-tab .tab-link[disabled] {
+  opacity: 0.6;
+}
+.review-tab .write-review {
+  justify-content: center;
+  padding: 0;
+  line-height: 1;
+}
+.review-tab .customer-reviw-card {
+  float: left;
+  width: 285px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px #eaeaea;
+  border-radius: 4px;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+.review-tab .customer-reviw-card img {
+  width: 100%;
+}
+.review-tab .customer-reviw-author {
+  font-size: 16px;
+  margin: 0;
+}
+.review-tab .customer-reviw-content {
+  padding: 10px 15px;
+}
+.review-tab .customer-reviw-content p {
+  font-size: 14px;
+  font-family: "Apercu";
+  margin: 0;
+}
+.review-tab .customer-reviw-content .rating i {
+  color: rgb(246, 203, 183);
+}
+.review-tab .customer-reviw-card:hover {
+  transform: scale(1.03);
+}
+.review-tab .customer-reviw-card-wrapper {
+  margin: auto;
+  max-width: 600px;
+}
+.review-tab .see-more {
+  font-size: 16px;
+  font-family: "Apercu";
+  color: rgba(18, 18, 18, 0.9019607843);
+  width: 100%;
+}
+
+/*----------------------------------------*/
+/*   faq CSS START
+/*----------------------------------------*/
+.faq-area {
+  background: #fdf7f5;
+}
+.faq-area .section-title {
+  margin-bottom: 20px;
+}
+.faq-area .faq-text {
+  font-size: 20px;
+  font-family: "Apercu";
+  color: #5f6368;
+  margin-bottom: 35px;
+}
+.faq-area .faq-btn a {
+  background: #ede8e6;
+  border: 1px solid #ded9d7;
+  border-radius: 8px;
+  padding: 10px 28px;
+  width: fit-content;
+  font-size: 18px;
+  font-family: "Apercu";
+  color: #161616;
 }
 
 /*# sourceMappingURL=main.css.map */

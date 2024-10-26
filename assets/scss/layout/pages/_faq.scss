@@ -1,0 +1,37 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*   faq CSS START
+/*----------------------------------------*/
+
+.faq-area {
+    background: #fdf7f5;
+
+    .section-title {
+        margin-bottom: 20px;
+    }
+
+    .faq-text {
+        font-size: 20px;
+        font-family: "Apercu";
+        color: #5f6368;
+        margin-bottom: 35px;
+    }
+
+    .faq-btn a {
+        background: #ede8e6;
+        border: 1px solid #ded9d7;
+        border-radius: 8px;
+        padding: 10px 28px;
+        width: fit-content;
+        font-size: 18px;
+        font-family: "Apercu";
+        color: #161616;
+
+
+    }
+
+
+
+
+}

@@ -194,8 +194,14 @@
             $playButton.show();
         });
 
-
-
+        ///////////////////////////////////
+        // customer review 
+        $('.customer-reviw-card-wrapper').isotope({
+            itemSelector: '.customer-reviw-card',
+            masonry: {
+                columnWidth: 100
+            }
+        });
 
 
 
