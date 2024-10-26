@@ -58,15 +58,15 @@
 
 //////////////////////////
 .cart-btn {
-    background: var(--white-color);
+    background: #f6cbb7;
     width: 100%;
     padding: 11.5px 0;
     max-width: 445px;
     text-align: center;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 700;
     border-radius: 6px;
-    border: 1px solid rgb(246, 203, 183);
+    border: 1px solid #fff;
     position: relative;
     overflow: hidden;
     transition: 0.3s;
@@ -77,7 +77,7 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background: rgb(246, 203, 183);
+        background: rgb(255, 255, 255);
         left: 0;
         top: 0;
         border-radius: inherit;
@@ -92,7 +92,7 @@
             transform: scaleX(0);
         }
 
-        color: rgb(246, 203, 183);
+        color: rgb(255, 255, 255);
     }
 }
 
